@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Multiplayer Game</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-    <script src="p5.play.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBCxAfa0t2ydG8b-zUhrV6v_kVrDeEGL10",
+    authDomain: "multiplayer-car-racing-g-a0a3e.firebaseapp.com",
+    databaseURL: "https://multiplayer-car-racing-g-a0a3e.firebaseio.com",
+    projectId: "multiplayer-car-racing-g-a0a3e",
+    storageBucket: "multiplayer-car-racing-g-a0a3e.appspot.com",
+    messagingSenderId: "273906380724",
+    appId: "1:273906380724:web:37b5839f9f1e6759714ce1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
+</script>
+<script src="js/form.js"></script>
+<script src="js/game.js"></script>
+<script src="js/player.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
 
-    <script>
-      // Your web app's Firebase configuration
-      //Add here
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-
-    <script src="js/Player.js"></script>
-    <script src="js/Form.js"></script>
-    <script src="js/Game.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-    <script src="sketch.js"></script>
+      <script src="sketch.js"></script>
   </body>
 </html>
